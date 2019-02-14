@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Instagram Feed</title>
+  </head>
+  <body>
+        <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-between">
+            <a class="navbar-brand"><img style="height: 40px; width: 200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2000px-Instagram_logo.svg.png"/></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="btn btn-success nav-link" data-toggle="modal" data-target="#exampleModal">Create a new post</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-cog"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <hr>
+                          <a class="dropdown-item" href="#">Log out</a>
+                        </div>  
+                    </li>
+                 </ul>
+             </div>
+        </nav>
+    <div class="container-fluid custom">
+        <div class="row pt-2" id="grid-bar">
+            <div class="col-12">
+                <ul class="nav nav-pills mb-2 justify-content-center" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#grid-view" role="tab" aria-controls="grid-view" aria-selected="true"><i class="fas fa-grip-lines"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#scroll-view" role="tab" aria-controls="scroll-view" aria-selected="false"><i class="fas fa-th"></i></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="grid-view" role="tabpanel" aria-labelledby="grid-view">
+              <div class="row justify-content-center">
+                  <div class="col-12 col-md-5">
+                      <div class="row mb-4 mt-4">
+                          <div class="col-12 post">
+                              <div class="bg-white">
+                                 <div class="row">
+                                    <div class="col-12">
+                                        <div class="row justify-content-between py-2 px-0">
+                                            <div class="col-5">
+                                                <span><strong>My first photo</strong></span>
+                                            </div>
+                                            <div class="col-3 text-right date">
+                                                <span>12/14</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col-12 px-0">
+                                        <img src="https://paradisecopters.com/wp-content/uploads/2018/04/sunset5-min.jpg" class="img-fluid" alt="Responsive image"/>
+                                     </div>
+                                 </div>
+                                 <div class="row py-2 px-2">
+                                     <div class="col-12">
+                                        <span><strong>33 likes</strong><br>This is my first photo of the feed. Isn't it
+                                        cool?!?</span>
+                                    </div>
+                                 </div>
+                                 <div class="row justify-content-between px-3 py-1 comment">
+                                     <div class="col-5">
+                                         <span><i class="far fa-heart"></i></span>
+                                         <span class="ml-2">Comment...</span>
+                                     </div>
+                                     <div class="col-2 text-right">
+                                         <span><i class="fas fa-ellipsis-v"></i></span>
+                                     </div>
+                                 </div>
+                             </div>
+                          </div>
+                          </div>
+                          <div class="row mb-4">
+                          <div class="col-12 post">
+                              <div class="bg-white">
+                                 <div class="row">
+                                    <div class="col-12">
+                                        <div class="row justify-content-between py-2 px-0">
+                                            <div class="col-5">
+                                                <span><strong>Some cute thing</strong></span>
+                                            </div>
+                                            <div class="col-3 text-right date">
+                                                <span>12/14</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col-12 px-0">
+                                        <img src="https://www.catster.com/wp-content/uploads/2018/07/Savannah-cat-long-body-shot.jpg" class="img-fluid" alt="Responsive image"/>
+                                     </div>
+                                 </div>
+                                 <div class="row py-2 px-2">
+                                     <div class="col-12">
+                                        <span>Check out this cute cat. On the internet,
+                                    nothing is cuter than cats!</span>
+                                    </div>
+                                 </div>
+                                 <div class="row justify-content-between px-3 py-1 comment">
+                                     <div class="col-5">
+                                         <span><i class="far fa-heart"></i></span>
+                                         <span class="ml-2">Comment...</span>
+                                     </div>
+                                     <div class="col-2 text-right">
+                                         <span><i class="fas fa-ellipsis-v"></i></span>
+                                     </div>
+                                 </div>
+                             </div>
+                          </div>
+                          </div>
+                          <div class="row mb-4">
+                          <div class="col-12 post">
+                              <div class="bg-white">
+                                 <div class="row">
+                                    <div class="col-12">
+                                        <div class="row justify-content-between py-2 px-0">
+                                            <div class="col-5">
+                                                <span><strong>Kristy Swanson</strong></span>
+                                            </div>
+                                            <div class="col-3 text-right date">
+                                                <span>12/14</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col-12 px-0">
+                                        <img src="https://c8.alamy.com/comp/KWPD65/los-angeles-ca-september-10-kristy-swanson-at-the-comedy-central-roast-KWPD65.jpg" class="img-fluid" alt="Responsive image"/>
+                                     </div>
+                                 </div>
+                                 <div class="row py-2 px-2">
+                                     <div class="col-12">
+                                        <span>Here is an awesome picture of Kristy 
+                                    Swanson!</span>
+                                    </div>
+                                 </div>
+                                 <div class="row justify-content-between px-3 py-1 comment">
+                                     <div class="col-5">
+                                         <span><i class="far fa-heart"></i></span>
+                                         <span class="ml-2">Comment...</span>
+                                     </div>
+                                     <div class="col-2 text-right">
+                                         <span><i class="fas fa-ellipsis-v"></i></span>
+                                     </div>
+                                 </div>
+                          </div>
+                      </div>
+                      </div>
+                          <div class="row mb-4">
+                          <div class="col-12 post">
+                              <div class="bg-white">
+                                 <div class="row">
+                                    <div class="col-12">
+                                        <div class="row justify-content-between py-2 px-0">
+                                            <div class="col-5">
+                                                <span><strong>Good food</strong></span>
+                                            </div>
+                                            <div class="col-3 text-right date">
+                                                <span>12/14</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col-12 px-0">
+                                        <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/dc23cd051d2249a5903d25faf8eeee4c/BFV36537_CC2017_2IngredintDough4Ways-FB.jpg?output-quality=60&resize=1000:*" class="img-fluid" alt="Responsive image"/>
+                                     </div>
+                                 </div>
+                                 <div class="row py-2 px-2">
+                                     <div class="col-12">
+                                        <span>Check out this awesome food I just ate!</span>
+                                    </div>
+                                 </div>
+                                 <div class="row justify-content-between px-3 py-1 comment">
+                                     <div class="col-5">
+                                         <span><i class="far fa-heart"></i></span>
+                                         <span class="ml-2">Comment...</span>
+                                     </div>
+                                     <div class="col-2 text-right">
+                                         <span><i class="fas fa-ellipsis-v"></i></span>
+                                     </div>
+                                 </div>
+                          </div>
+                      </div>
+                      </div>
+                   </div>
+              </div>
+          </div>
+        <div class="tab-pane fade" id="scroll-view" role="tabpanel" aria-labelledby="scroll-view-tab">
+            <div class="row no-gutters">
+                <div class="col-4">
+                    <div class="post-img" style="background-image: url(https://paradisecopters.com/wp-content/uploads/2018/04/sunset5-min.jpg);">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="post-img" style="background-image: url(https://www.catster.com/wp-content/uploads/2018/07/Savannah-cat-long-body-shot.jpg);">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="post-img" style="background-image: url(https://c8.alamy.com/comp/KWPD65/los-angeles-ca-september-10-kristy-swanson-at-the-comedy-central-roast-KWPD65.jpg);">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="post-img" style="background-image: url(https://img.buzzfeed.com/thumbnailer-prod-us-east-1/dc23cd051d2249a5903d25faf8eeee4c/BFV36537_CC2017_2IngredintDough4Ways-FB.jpg?output-quality=60&resize=1000:*);">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="post-img" style="background-image: url(https://www.frostburg.edu/_cms/ingrid-braun-1-web.jpg);">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="post-img" style="background-image: url(https://g77v3827gg2notadhhw9pew7-wpengine.netdna-ssl.com/wp-content/uploads/2018/02/doberman-pinscher-1098804_1920-1024x681.jpg);">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="post-img" style="background-image: url(http://res.cloudinary.com/simpleview/image/upload/v1497480003/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg);">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="post-img" style="background-image: url(https://www.gannett-cdn.com/presto/2018/11/03/PKNS/455aa3dd-322f-4c58-ae68-3c8861e24340-TennesseeVs.Charlotte2ndhalf_CM_0059.jpg?crop=3361,1878,x0,y0&width=3200&height=1680&fit=bounds);">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="post-img" style="background-image: url(https://assets.simpleviewcms.com/simpleview/image/upload/crm/knoxville/Neyland-Stadium-Tour-3_abc15514-5056-a348-3a824d887345e5a7.jpg);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <textarea style="width: 98%; border-radius: 3%;"></textarea>
+      </div>
+      <div class="icons pl-3">
+         <i class="fas fa-camera"></i>
+         <span>&nbsp;</span>
+         <i class="fas fa-map-marker-alt"></i>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

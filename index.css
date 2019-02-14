@@ -1,0 +1,28 @@
+.custom {
+    background-color: lightgray;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.post {
+    background-color: white;
+}
+
+#grid-bar {
+    background-color: white;
+}
+
+.post-img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 33vh;
+}
+
+.comment, .date {
+    color: #a9abad;
+}
+
+.icons {
+    font-size: 17px;
+}
